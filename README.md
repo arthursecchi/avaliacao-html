@@ -5,7 +5,7 @@ Avaliação HTML
 ## Páginas
 - index.html: apresentação e dicas básicas
 - treino.html: organização do treino
-- exercicios.html: exercícios e remada aberta
+- exercicios.html: exercícios e puchada alta
 - formulario.html: formulário de registro de treino
 
 ## Pastas
