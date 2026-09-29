@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Organização do Treino</title>
+</head>
+<body>
+
+    <header>
+        <h1>Organização do Treino</h1>
+        <p>Frequência, exemplo de semana, descanso e progressão de carga.</p>
+    </header>
+
+    <nav>
+        <a href="index.html">Início</a>
+        <a href="treino.html">Treino</a>
+        <a href="exercicios.html">Exercícios</a>
+        <a href="formulario.html">Formulário</a>
+    </nav>
+
+    <main>
+
+        <section>
+            <h2>Frequência de treino</h2>
+            <p>Frequência sugerida para iniciantes: <del>6 dias por semana</del> <ins>3 dias por semana, com descanso entre eles</ins>.</p>
+            <p>A informação foi corrigida porque quem está começando ainda precisa se adaptar.</p>
+        </section>
+
+        <section>
+            <h2>Exemplo de semana</h2>
+            <!-- Me confundi com o colspan nessa tabela. Na primeira vez deixei 3 células na última linha e usei o colspan junto, aí a tabela ficou torta com uma coluna sobrando. Depois entendi que o colspan="3" já ocupa as 3 colunas, então a linha precisa de uma célula só. -->
+            <table border="1">
+                <caption>Exemplo de divisão de treino em três dias</caption>
+                <tr>
+                    <th>Segunda</th>
+                    <th>Quarta</th>
+                    <th>Sexta</th>
+                </tr>
+                <tr>
+                    <td>Costas e bíceps</td>
+                    <td>Peito e tríceps</td>
+                    <td>Pernas e abdômen</td>
+                </tr>
+                <tr>
+                    <td colspan="3">Terça, quinta, sábado e domingo: descanso ou caminhada leve</td>
+                </tr>
+            </table>
+
+            <p>No dia de costas, um exemplo de exercício é a remada aberta.</p>
+
+            <figure>
+                <video controls width="350" height="350">
+                    <source src="../video/remada aberta.mp4" type="video/mp4">
+                </video>
+                <figcaption>Remada aberta feita durante um treino de costas.</figcaption>
+            </figure>
+        </section>
+
+        <section>
+            <h2>Descanso</h2>
+            <details>
+                <summary>Por que o descanso é importante?</summary>
+                <p>O músculo é estimulado durante o treino, e é no descanso que o corpo se recupera. Sem descanso, o próximo treino tende a render menos.</p>
+            </details>
+        </section>
+
+        <section>
+            <h2>Progressão de carga e consistência</h2>
+            <p>Progressão de carga é aumentar o peso aos poucos. <mark>Só aumente a carga quando conseguir fazer todas as séries com boa execução.</mark></p>
+
+            <p>Meta de exemplo: 3 treinos na semana (2 já feitos).</p>
+            <progress value="2" max="3">2 de 3 treinos</progress>
+
+            <p>Exemplo de esforço em um treino, de 0 a 10 (<abbr title="Percepção Subjetiva de Esforço">PSE</abbr>):</p>
+            <meter min="0" max="10" low="3" high="8" value="7">7 de 10</meter>
+        </section>
+
+    </main>
+
+    <footer>
+        <p>Atividade de HTML - Musculação para iniciantes.</p>
+    </footer>
+
+</body>
+</html>

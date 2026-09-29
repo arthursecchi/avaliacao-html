@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Registro de Treino</title>
+</head>
+<body>
+
+    <header>
+        <h1>Registro de Treino</h1>
+        <p>Formulário simples para anotar informações da rotina de academia.</p>
+    </header>
+
+    <nav>
+        <a href="index.html">Início</a>
+        <a href="treino.html">Treino</a>
+        <a href="exercicios.html">Exercícios</a>
+        <a href="formulario.html">Formulário</a>
+    </nav>
+
+    <main>
+
+        <section>
+            <h2>Preencha os dados</h2>
+
+            <form action="#" method="get">
+
+                <p>
+                    <label for="nome">Nome:</label>
+                    <input type="text" id="nome" name="nome" placeholder="Digite seu nome" required>
+                </p>
+
+                <p>
+                    <label for="objetivo">Objetivo:</label>
+                    <input list="lista-objetivos" id="objetivo" name="objetivo" placeholder="Ex.: ganhar força" required>
+                    <datalist id="lista-objetivos">
+                        <option value="Ganhar massa muscular">
+                        <option value="Perder gordura">
+                        <option value="Ganhar força">
+                        <option value="Melhorar o condicionamento">
+                    </datalist>
+                </p>
+
+                <p>
+                    <label for="inicio">Data de início na academia:</label>
+                    <input type="date" id="inicio" name="inicio" required>
+                </p>
+
+                <p>
+                    <label for="experiencia">Experiência:</label>
+                    <select id="experiencia" name="experiencia" required>
+                        <option value="">Selecione</option>
+                        <option value="nunca">Nunca treinei</option>
+                        <option value="menos6">Menos de 6 meses</option>
+                        <option value="mais6">Mais de 6 meses</option>
+                    </select>
+                </p>
+
+                <p>
+                    <label for="esforco">Esforço no último treino (1 = muito leve, 10 = máximo):</label>
+                    <input type="range" id="esforco" name="esforco" min="1" max="10" value="5">
+                </p>
+
+                <p>
+                    <label for="obs">Observações:</label><br>
+                    <textarea id="obs" name="obs" rows="4" cols="40" placeholder="Ex.: exercícios feitos, dificuldades..."></textarea>
+                </p>
+
+                <p>
+                    <button type="submit">Enviar</button>
+                </p>
+
+            </form>
+
+        </section>
+
+    </main>
+
+    <footer>
+        <p>Atividade de HTML - Musculação para iniciantes.</p>
+    </footer>
+
+</body>
+</html>
